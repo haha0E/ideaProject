@@ -1,6 +1,4 @@
 package Algrorithm.Vol.VI_brand_and_bound;
-
-
 import java.util.LinkedList;
 import java.util.Queue;
 
