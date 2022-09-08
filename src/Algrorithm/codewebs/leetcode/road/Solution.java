@@ -1,7 +1,7 @@
 package Algrorithm.codewebs.leetcode.road;
 
 public class Solution {
-    //new char[][]{{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}},"ABCCED"
+    //new char[][]{{'Solution','B','C','E'},{'S','F','C','S'},{'Solution','D','E','E'}},"ABCCED"
     public static void main(String[] args) {
         Solution solution = new Solution();
         boolean aab = solution.exist(new char[][]{{'A', 'B', 'C', 'E'}, {'S', 'F', 'E', 'S'}, {'A', 'D', 'E', 'E'}}, "ABCESEEEFS");

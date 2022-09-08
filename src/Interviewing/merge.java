@@ -1,4 +1,4 @@
-package Algrorithm;
+package Interviewing;
 
 import java.util.Scanner;
 

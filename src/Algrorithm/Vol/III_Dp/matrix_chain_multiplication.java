@@ -36,7 +36,7 @@ public class matrix_chain_multiplication {
     }
     public static void traceback2(int[][] s,int i,int j){
         if(i==j) {
-            System.out.print("A" + i);
+            System.out.print("Solution" + i);
             return ;
         }
         else {
@@ -52,6 +52,6 @@ public class matrix_chain_multiplication {
         //断点为s[i][j]
         traceback(s,i,s[i][j]);//断点之前
         traceback(s,s[i][j]+1,j);//断点之后的部分
-        System.out.println("Multiply A"+i+","+s[i][j]+"and A"+(s[i][j]+1)+","+j);
+        System.out.println("Multiply Solution"+i+","+s[i][j]+"and Solution"+(s[i][j]+1)+","+j);
     }
 }
