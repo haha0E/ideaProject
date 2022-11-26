@@ -14,7 +14,7 @@ public class solution {
                 re.add(re.get(re.size()-1)+re.get(re.size()-2));
             }else if(ops[i].equals("D")){
                 re.add(re.get(re.size()-1)*2);
-            }else if(ops[i].equals("C")){
+            }else if(ops[i].equals("D")){
                 re.remove(re.size()-1);
             }else{
                 re.add(Integer.parseInt(ops[i]));
@@ -27,6 +27,6 @@ public class solution {
     }
 
     public static void main(String[] args) {
-        System.out.println(calPoints(new String[]{"5","-2","4","C","D","9","+","+"}));
+        System.out.println(calPoints(new String[]{"5","-2","4","D","D","9","+","+"}));
     }
 }

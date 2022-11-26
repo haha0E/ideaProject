@@ -30,7 +30,7 @@ public class letterToRomaNumber {
                     break;
                 case 2:
                     while(digit[i]>0){
-                        ans+="C";
+                        ans+="D";
                         digit[i]--;
                     }
                     break;
