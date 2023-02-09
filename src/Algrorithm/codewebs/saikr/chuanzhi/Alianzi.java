@@ -5,17 +5,13 @@ import java.util.Scanner;
 public class Alianzi {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int a=sc.nextInt();
-        int b=sc.nextInt();
+        long a=sc.nextLong();
+        long b=sc.nextLong();
         System.out.println(fun(a,b));
     }
-    public static  int fun(int a,int b){
-        int sgn=0;
-        if (b<0){
-            sgn=-1;
-        } else{
-            sgn=1;
-        }
-        return sgn*Math.abs(a);
+    public static  long fun(long a,long b){
+        long sgn=b<0?-1:1;
+        a=a<0?-a:a;
+        return sgn*a;
     }
 }

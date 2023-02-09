@@ -16,22 +16,22 @@ public class B {
         for(int i=l-m+1;i<l+1;i++){
             b[i]= sc.nextInt();
         }
-        int t=2;
-        int o=0;
+        int t=2;//进制
+        int o=0;//进位
         int[] ans=new int[l+1];
-        for(int i=l;i>0;i--){
-            ans[i]=(a[i]+b[i])%t+o;
-            o=(a[i]+b[i])/t;
+        for(int i=l;i>=0;i--){
+            ans[i]=(a[i]+b[i]+o)%t;
+            o=(a[i]+b[i]+o)/t;
             t++;
         }
         boolean x=false;
-        for(int i:ans){
-            if(i>0)
-                x=true;
-            if(x)
-                System.out.print(i+" ");
+        for(int i=0;i<l+1;i++){
+            if(i==0){
+                if(ans[i]!=0)
+                    System.out.print(ans[i]+" ");
+                continue;
+            }
+            System.out.print(ans[i]+" ");
         }
     }
-
-
 }
